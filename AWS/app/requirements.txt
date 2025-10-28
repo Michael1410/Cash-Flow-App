@@ -1,0 +1,7 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.5
+pdfplumber==0.11.4
+psycopg2-binary==2.9.9
+SQLAlchemy==2.0.36
+pydantic==2.9.2
+rapidfuzz==3.9.7

@@ -1,0 +1,448 @@
+{
+  "currency_hints": [
+    "CAD",
+    "USD",
+    "C$",
+    "$",
+    "\u00a3",
+    "EUR",
+    "GBP"
+  ],
+  "company_markers": [
+    "ltd",
+    "limited",
+    "inc",
+    "inc.",
+    "llc",
+    "corp",
+    "corporation",
+    "plc",
+    "s.a.",
+    "gmbh"
+  ],
+  "canon": {
+    "cash": {
+      "synonyms": [
+        "cash",
+        "cash and cash equivalents",
+        "cash equivalents",
+        "bank"
+      ],
+      "regex": []
+    },
+    "accounts_receivable": {
+      "synonyms": [
+        "accounts receivable",
+        "trade receivables",
+        "a/r",
+        "trade and other receivables"
+      ],
+      "regex": []
+    },
+    "investment_tax_credits_receivable": {
+      "synonyms": [
+        "investment tax credits receivable"
+      ],
+      "regex": []
+    },
+    "inventories": {
+      "synonyms": [
+        "inventories",
+        "inventory",
+        "stock"
+      ],
+      "regex": []
+    },
+    "prepaid_expenses": {
+      "synonyms": [
+        "prepaid expenses",
+        "prepaids",
+        "prepaid expenses and other current assets",
+        "prepaid expenses, other"
+      ],
+      "regex": []
+    },
+    "investment_in_xyz_ltd": {
+      "synonyms": [
+        "investment in xyz ltd.",
+        "investment in associate",
+        "investments"
+      ],
+      "regex": []
+    },
+    "equipment_and_software": {
+      "synonyms": [
+        "equipment and software",
+        "property and equipment",
+        "pp&e",
+        "property, plant and equipment"
+      ],
+      "regex": []
+    },
+    "intangible_assets": {
+      "synonyms": [
+        "intangible assets",
+        "intangibles",
+        "patents"
+      ],
+      "regex": []
+    },
+    "accounts_payable_and_accrued_liabilities": {
+      "synonyms": [
+        "accounts payable and accrued liabilities",
+        "accounts payable",
+        "trade payables",
+        "accrued liabilities",
+        "a/p"
+      ],
+      "regex": []
+    },
+    "government_remittances_payable": {
+      "synonyms": [
+        "government remittances payable",
+        "taxes payable",
+        "gst/hst payable",
+        "vat payable"
+      ],
+      "regex": []
+    },
+    "deferred_revenue": {
+      "synonyms": [
+        "deferred revenue",
+        "contract liabilities",
+        "unearned revenue"
+      ],
+      "regex": []
+    },
+    "current_portion_of_loan_payable": {
+      "synonyms": [
+        "current portion of loan payable",
+        "current portion of long-term debt",
+        "current portion of borrowings"
+      ],
+      "regex": []
+    },
+    "owing_to_shareholder": {
+      "synonyms": [
+        "owing to shareholder",
+        "due to shareholder",
+        "due to related party",
+        "shareholder loan (current)"
+      ],
+      "regex": []
+    },
+    "loan_payable": {
+      "synonyms": [
+        "loan payable",
+        "long-term debt",
+        "borrowings"
+      ],
+      "regex": []
+    },
+    "capital_stock": {
+      "synonyms": [
+        "capital stock",
+        "share capital",
+        "issued capital",
+        "common stock",
+        "capital shares"
+      ],
+      "regex": []
+    },
+    "retained_earnings": {
+      "synonyms": [
+        "retained earnings",
+        "retained deficit",
+        "accumulated deficit",
+        "accumulated earnings"
+      ],
+      "regex": []
+    },
+    "revenue": {
+      "synonyms": [
+        "revenue",
+        "sales",
+        "turnover"
+      ],
+      "regex": []
+    },
+    "advertising_and_promotion": {
+      "synonyms": [
+        "advertising and promotion",
+        "marketing",
+        "advertising"
+      ],
+      "regex": []
+    },
+    "amortization_of_tangible_assets": {
+      "synonyms": [
+        "amortization of tangible assets",
+        "depreciation",
+        "depreciation and amortization (pp&e)"
+      ],
+      "regex": []
+    },
+    "amortization_of_intangible_assets": {
+      "synonyms": [
+        "amortization of intangible assets",
+        "amortization (intangibles)"
+      ],
+      "regex": []
+    },
+    "bad_debt_expense": {
+      "synonyms": [
+        "bad debt expense",
+        "allowance for doubtful accounts",
+        "impairment on receivables"
+      ],
+      "regex": []
+    },
+    "interest_on_long_term_debt": {
+      "synonyms": [
+        "interest on long-term debt",
+        "interest expense"
+      ],
+      "regex": []
+    },
+    "office_expenses": {
+      "synonyms": [
+        "office expenses",
+        "general and administrative",
+        "g&a"
+      ],
+      "regex": []
+    },
+    "professional_fees": {
+      "synonyms": [
+        "professional fees",
+        "consulting fees",
+        "legal and professional"
+      ],
+      "regex": []
+    },
+    "rental": {
+      "synonyms": [
+        "rental",
+        "rent"
+      ],
+      "regex": []
+    },
+    "repairs_and_maintenance": {
+      "synonyms": [
+        "repairs and maintenance",
+        "maintenance"
+      ],
+      "regex": []
+    },
+    "salaries_and_wages_research_and_development": {
+      "synonyms": [
+        "salaries and wages research and development",
+        "r&d salaries",
+        "research and development salaries"
+      ],
+      "regex": []
+    },
+    "salaries_and_wages_sales_and_administration": {
+      "synonyms": [
+        "salaries and wages sales and administration",
+        "selling and admin salaries",
+        "s&a salaries"
+      ],
+      "regex": []
+    },
+    "salaries_and_wages_solutions_implementation": {
+      "synonyms": [
+        "salaries and wages solutions implementation",
+        "implementation salaries"
+      ],
+      "regex": []
+    },
+    "supplies": {
+      "synonyms": [
+        "supplies"
+      ],
+      "regex": []
+    },
+    "income_before_income_taxes": {
+      "synonyms": [
+        "income before income taxes",
+        "profit before tax",
+        "ebt"
+      ],
+      "regex": []
+    },
+    "income_taxes": {
+      "synonyms": [
+        "income taxes",
+        "tax expense"
+      ],
+      "regex": []
+    },
+    "net_income": {
+      "synonyms": [
+        "net income",
+        "profit for the year",
+        "net profit",
+        "loss for the year"
+      ],
+      "regex": []
+    },
+    "retained_earnings_beginning": {
+      "synonyms": [
+        "retained earnings (deficit), beginning of year",
+        "retained earnings, beginning",
+        "opening retained earnings"
+      ],
+      "regex": []
+    },
+    "dividends": {
+      "synonyms": [
+        "dividends",
+        "dividends declared",
+        "dividends paid (retained earnings rollforward)"
+      ],
+      "regex": []
+    },
+    "retained_earnings_end_of_year": {
+      "synonyms": [
+        "retained earnings, end of year",
+        "retained earnings (closing)"
+      ],
+      "regex": []
+    },
+    "purchase_of_property_and_equipment": {
+      "synonyms": [
+        "purchase of property and equipment",
+        "capital expenditures",
+        "purchases of pp&e"
+      ],
+      "regex": []
+    },
+    "repayment_of_shareholder_loan": {
+      "synonyms": [
+        "repayment of shareholder loan",
+        "shareholder loan repayment"
+      ],
+      "regex": []
+    },
+    "dividends_paid": {
+      "synonyms": [
+        "dividends paid"
+      ],
+      "regex": []
+    },
+    "repayment_of_loan_payable": {
+      "synonyms": [
+        "repayment of loan payable",
+        "repayment of long-term debt"
+      ],
+      "regex": []
+    },
+    "redemption_of_capital_stock": {
+      "synonyms": [
+        "redemption of capital stock",
+        "share buyback",
+        "repurchase of shares"
+      ],
+      "regex": []
+    },
+    "increase_in_cash": {
+      "synonyms": [
+        "increase in cash",
+        "net increase (decrease) in cash"
+      ],
+      "regex": []
+    },
+    "cash_beginning": {
+      "synonyms": [
+        "cash at beginning of year",
+        "cash, beginning of year"
+      ],
+      "regex": []
+    },
+    "cash_end": {
+      "synonyms": [
+        "cash at end of year",
+        "cash, end of year"
+      ],
+      "regex": []
+    }
+  },
+  "rollups": {
+    "balance_sheet": {
+      "assets": {
+        "current_assets": [
+          "cash",
+          "accounts_receivable",
+          "investment_tax_credits_receivable",
+          "inventories",
+          "prepaid_expenses"
+        ],
+        "singletons": [
+          "investment_in_xyz_ltd",
+          "equipment_and_software",
+          "intangible_assets"
+        ]
+      },
+      "liabilities_and_equity": {
+        "current_liabilities": [
+          "accounts_payable_and_accrued_liabilities",
+          "government_remittances_payable",
+          "deferred_revenue",
+          "current_portion_of_loan_payable",
+          "owing_to_shareholder"
+        ],
+        "loan_payable": "loan_payable",
+        "shareholders_equity": [
+          "capital_stock",
+          "retained_earnings"
+        ]
+      }
+    },
+    "income_statement": {
+      "expenses": [
+        "advertising_and_promotion",
+        "amortization_of_tangible_assets",
+        "amortization_of_intangible_assets",
+        "bad_debt_expense",
+        "interest_on_long_term_debt",
+        "office_expenses",
+        "professional_fees",
+        "rental",
+        "repairs_and_maintenance",
+        "salaries_and_wages_research_and_development",
+        "salaries_and_wages_sales_and_administration",
+        "salaries_and_wages_solutions_implementation",
+        "supplies"
+      ],
+      "rollforward_keys": [
+        "retained_earnings_beginning",
+        "dividends",
+        "retained_earnings_end_of_year"
+      ]
+    },
+    "cash_flows": {
+      "operating_components": [
+        "net_income",
+        "amortization_of_tangible_assets",
+        "amortization_of_intangible_assets",
+        "change_accounts_receivable",
+        "change_investment_tax_credits_receivable",
+        "change_inventories",
+        "change_prepaid_expenses",
+        "change_accounts_payable_and_accrued_liabilities",
+        "change_government_remittances_payable",
+        "change_deferred_revenue"
+      ],
+      "investing_components": [
+        "purchase_of_property_and_equipment"
+      ],
+      "financing_components": [
+        "repayment_of_shareholder_loan",
+        "dividends_paid",
+        "repayment_of_loan_payable",
+        "redemption_of_capital_stock"
+      ]
+    }
+  }
+}
