@@ -1,3 +1,5 @@
+#Run uvicorn main:app --reload
+
 import os, re, json, datetime
 from typing import Optional, List, Dict, Any, Tuple
 import pdfplumber
