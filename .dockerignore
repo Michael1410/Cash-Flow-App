@@ -1,0 +1,13 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+.git/
+.DS_Store
+docker-compose.override.yml
+node_modules/
+
+# exclude editor files
+.vscode/

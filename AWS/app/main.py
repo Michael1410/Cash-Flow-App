@@ -9,13 +9,21 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.exc import IntegrityError
 from rapidfuzz import process, fuzz
 import tempfile
+from pathlib import Path
 
+# Connect to DB 
 POSTGRES_DSN = os.getenv("POSTGRES_DSN", "postgresql+psycopg2://postgres:password@localhost:5432/finstat")
 engine = create_engine(POSTGRES_DSN, future=True)
 
 # Load taxonomy (config-driven)
-with open("AWS/app/taxonomy.json", "r", encoding="utf-8") as f:
+#with open("AWS/app/taxonomy.json", "r", encoding="utf-8") as f:
+    #TAX = json.load(f)
+    
+BASE_DIR = Path(__file__).resolve().parent
+TAXONOMY_PATH = BASE_DIR / "taxonomy.json"
+with open(TAXONOMY_PATH, "r", encoding="utf-8") as f:
     TAX = json.load(f)
+
 
 CANON = TAX["canon"]
 ROLLUPS = TAX["rollups"]
@@ -65,7 +73,7 @@ def detect_currency(full_text: str) -> str:
             return code
     if "£" in full_text: return "GBP"
     if "€" in full_text: return "EUR"
-    return "AUTO"
+    return "AUTO" 
 
 # Build fuzzy choices
 FUZZY_CHOICES = []
