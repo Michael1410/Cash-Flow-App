@@ -1,19 +1,16 @@
 FROM python:3.12-slim
 
+# install dependencies
 WORKDIR /app
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends build-essential libpq-dev gcc \
-    && rm -rf /var/lib/apt/lists/*
+# copy the dependencies file to the working directory
+COPY /AWS/app/requirements.txt .
 
-COPY AWS/app/requirements.txt /app/requirements.txt
+# install dependencies
+RUN pip install -r requirements.txt
 
-#
-RUN python -m pip install --upgrade pip setuptools wheel \
-    && python -m pip install --no-cache-dir -r /app/requirements.txt
+# copy the content of the local src directory to the working directory
+COPY . .
 
-COPY AWS/app/ /app/
-
-ENV PYTHONUNBUFFERED=1
-
-CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+# command to run on container start
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

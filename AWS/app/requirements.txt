@@ -5,3 +5,4 @@ psycopg2-binary==2.9.9
 SQLAlchemy==2.0.36
 pydantic==2.9.2
 rapidfuzz==3.9.7
+python-multipart==0.0.20
